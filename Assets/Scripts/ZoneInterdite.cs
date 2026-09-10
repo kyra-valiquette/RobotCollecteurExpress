@@ -3,7 +3,7 @@ using UnityEngine;
 public class ZoneInterdite : MonoBehaviour
 {
     [SerializeField] private Transform pointDepart;
-
+    [SerializeField] private EffetDegatsJoueur effetDegatsJoueur;
     private void OnTriggerEnter2D(Collider2D autre)
     {
         // TODO 1 : vérifier que l'objet possède le tag Player.
@@ -17,6 +17,7 @@ public class ZoneInterdite : MonoBehaviour
             return;
         }
         // TODO 3 : replacer le joueur et afficher un message.
+        effetDegatsJoueur?.JouerEffetDegat();
         autre.transform.position = pointDepart.position;
         Debug.Log("Le robot retourne au point de départ.");
 
