@@ -93,6 +93,8 @@ public class EffetDegatsJoueur : MonoBehaviour
      * renduRobot.color = couleurInitiale;
      * transform.localScale = tailleInitiale;
      * if (flashEcran != null)
-     //* flashEcran.alpha = 0f;
+     //* flashEcran.alpha = 0f; 
+    
+for new commit
      */
 
